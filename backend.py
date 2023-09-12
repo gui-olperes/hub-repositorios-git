@@ -8,8 +8,8 @@ from github import Github
 eel.init('frontend')
 
 # Credenciais do GitHub (substitua com as suas credenciais)
-github_username = 'gui-olperes'
-github_token = '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'
+github_username = 'seu_usuario'
+github_token = 'seu_token'
 
 # Inicializando o cliente do GitHub
 g = Github(github_username, github_token)
