@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Aplicação GitHub</title>
+    <!-- Inclua o jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Inclua os scripts do Bootstrap -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Adicione os links para os estilos do Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Adicione o link para o Font Awesome (ícones) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body{
+        background-color: #010409;
+        color: white;
+        }
+
+        .ListaRepositorios{
+           background-color:333;
+
+        }
+
+        .letras-escuras {
+    color: black; /* Ou a cor desejada para as letras escuras */
+}
+
+    </style>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Minha Aplicação GitHub</h1>
+        <button class="btn btn-primary mb-3" onclick="criarRepositorio()"><i class="fas fa-plus"></i> Criar Novo Repositório</button>
+
+        <div class="row" id="listaRepositorios">
+            <!-- O conteúdo será adicionado dinamicamente aqui -->
+        </div>
+
+        <!-- Dentro do container -->
+<div class="modal fade" id="arquivosModal" tabindex="-1" role="dialog" aria-labelledby="arquivosModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title letras-escuras" id="arquivosModalLabel">Arquivos do Repositório</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body letras-escuras" id="modalListaArquivos">
+                <!-- Aqui serão exibidos os arquivos -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+
+   <!-- Adicione o link para o script.js -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script.js"></script>
+<!-- Adicione o link para o Eel (importante incluir antes do código Eel) -->
+<script src="/eel.js"></script>
+
+
+</body>
+</html>
